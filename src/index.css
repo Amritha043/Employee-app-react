@@ -1,0 +1,13 @@
+.container{
+  background-color: rgb(238, 252, 224);
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid rgb(96, 96, 96);
+}
+h1{
+  margin-bottom: 30px;
+}
+body{
+  background-color: rgba(72, 129, 67, 0.511);
+  padding: 20px;
+}
