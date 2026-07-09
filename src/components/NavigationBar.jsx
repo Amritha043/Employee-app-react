@@ -3,6 +3,7 @@ import React from 'react'
 const NavigationBar = () => {
   return (
     <div>
+      <NavigationBar/>
 <nav class="navbar navbar-expand-lg   border-subtle border-bottom border-body">
   <div class="container-fluid">
     <a class="navbar-brand " href="#">APPLICATION FORM</a>
@@ -12,11 +13,17 @@ const NavigationBar = () => {
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active " aria-current="page" href="#">ADD EMPLOYEE</a>
+          <a class="nav-link active " aria-current="page" href="/">ADD EMPLOYEE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active " aria-current="page" href="/delete">DELETE EMPLOYEE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active " aria-current="page" href="/view">VIEW EMPLOYEE</a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link active " href="#">SEARCH EMPLOYEE</a>
+          <a class="nav-link active " href="/search">SEARCH EMPLOYEE</a>
         </li>
         
         
