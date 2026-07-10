@@ -1,42 +1,53 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
-    <div>
-      <NavigationBar/>
-<nav class="navbar navbar-expand-lg   border-subtle border-bottom border-body">
-  <div class="container-fluid">
-    <a class="navbar-brand " href="#">APPLICATION FORM</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active " aria-current="page" href="/">ADD EMPLOYEE</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active " aria-current="page" href="/delete">DELETE EMPLOYEE</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active " aria-current="page" href="/view">VIEW EMPLOYEE</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link active " href="/search">SEARCH EMPLOYEE</a>
-        </li>
-        
-        
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav className="navbar navbar-expand-lg border-bottom">
+      <div className="container-fluid">
+        <Link className="navbar-brand" to="/">
+          APPLICATION FORM
+        </Link>
 
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
+                ADD EMPLOYEE
+              </Link>
+            </li>
 
+            <li className="nav-item">
+              <Link className="nav-link" to="/delete">
+                DELETE EMPLOYEE
+              </Link>
+            </li>
 
-    </div>
-  )
-}
+            <li className="nav-item">
+              <Link className="nav-link" to="/view">
+                VIEW EMPLOYEE
+              </Link>
+            </li>
 
-export default NavigationBar
+            <li className="nav-item">
+              <Link className="nav-link" to="/search">
+                SEARCH EMPLOYEE
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default NavigationBar;
